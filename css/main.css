@@ -1,0 +1,5 @@
+@import "./style.css";
+@import "./layout/inicial.css";
+@import "./layout/personalizacao.css";
+@import "./layout/quizz.css";
+@import "./layout/resultado.css"

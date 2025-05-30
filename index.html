@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="tela-inicial" style="display: flex;">
+            <p id="icon-principal">🍺</p>
+            <h1>Quiz de Classificação de Processos</h1>
+            <p>Aprenda a identificar atividades que Agregam Valor, Necessárias que Não Agregam Valor e Desperdícios na produção de cerveja</p>
+            <div class="como-jogar-container">
+                <h3>Como Jogar:</h3>
+                <p><span id="check-emoji">✓</span>Classifique atividades da produção de cerveja em três categorias.</p>
+                <p><span>🕑</span>Responda dentro do tempo limite para ganhar pontos.</p>
+                <p><span>🏆</span>Compete com amigos e aprenda otimização de processos</p>
+            </div>
+            <h2>Selecione a quantidade de jogadores</h2>
+            <div class="quantidade-de-jogadores-btns">
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button data-value="4">4</button>
+            </div>
+            <button id="proximo-btn" class="main-btn">Iniciar Jogo</button>
+        </div>
+
+
+
+        <div id="personalizacao-jogadores" style="display: none;">
+            <p id="icon-principal">👥</p>
+            <h1>Digite os nomes dos jogadores</h1>
+            <div id="inputs-container">
+            </div>
+            <p id="regras-nick">💡 Os nomes podem ter até 20 caracteres. Se deixar em branco, será usado o nome padrão.</p>
+            <button id="iniciar-jogo-btn" class="main-btn">Iniciar Jogo</button>
+        </div>
+
+                <!-- Tela do Quiz -->
+        <div id="quiz-container" style="display: none;">
+            <div class="top-quiz">
+                <div class="jogador-id-block block">
+                    <p>Jogador atual</p>
+                    <h3 id="jogador-nome"></h3>
+                    <p id="pontuacao">Pontuação: 0</p>
+                </div>
+                <div class="numero-pergunta-block block">
+                    <p id="main-icon-quiz">🍺</p>
+                    <p id="progresso-pergunta"></p>
+                </div>
+                <div class="timer-block block">
+                    <p>Tempo Restante</p>
+                    <h3 id="timer">15s</h3>
+                </div>
+            </div>
+            <div class="barra-container">
+                <div class="barra-progresso" id="barra" style="width: 50%;"></div>
+            </div>
+            <h2>Classifique esta atividade</h2>
+            <p id="pergunta"></p>
+            <div id="alternativas"></div>
+            <div id="respostas" style="display: none;">
+                <h2 id="resultado">certa</h2>
+                <p id="explicacao">loren</p>
+                <button id="proxima-pergunta" class="main-btn">Próxima</button>
+            </div>
+
+
+
+
+
+
+            <!-- <h2 id="jogador-nome"></h2>
+            <p id="pergunta"></p>
+            <div id="alternativas"></div>
+            <p id="timer">15</p> -->
+        </div>
+
+        <!-- Tela Final -->
+        <div id="resultado-final" style="display: none;">
+            <h1>🏁 Fim de Jogo!</h1>
+            <div class="tabela" id="tabela-resultados">
+                
+            </div>
+        </div>
+
+
+        
+        
+        
+
+    </div>
+</body>
+<script src="/js/main.js"></script>
+</html>

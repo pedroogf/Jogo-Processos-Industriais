@@ -1,0 +1,122 @@
+#quiz-container{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.top-quiz{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    width: 110px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.block p{
+    color: rgb(255, 136, 0);
+}
+.block h3{
+    color: rgb(160, 0, 0);
+}
+
+.jogador-id-block p{
+    font-size: 13px;
+    text-align: left;
+}
+.jogador-id-block h3{
+    font-size: 18px;
+}
+
+.numero-pergunta-block{
+    align-items: center;
+}
+
+.numero-pergunta-block p{
+    font-size: 13px;
+}
+#main-icon-quiz{
+    font-size: 33px;
+}
+
+.timer-block{
+    align-items: end;
+}
+.timer-block p{
+    text-align: right;
+    font-size: 13px;
+}
+.timer-block h3{
+    font-size: 30px;
+}
+
+.barra-container{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 30px;
+    padding: 2px;
+    box-shadow: inset 0px 0px 5px 2px rgb(0, 0, 0);
+}
+.barra-progresso{
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 174, 0), red);
+    border-radius: 30px;
+}
+
+#alternativas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acerto {
+  background-color: #4caf50 !important; /* verde */
+  color: white;
+}
+
+.erro {
+  background-color: #f44336 !important; /* vermelho */
+  color: white;
+}
+
+.alternativa-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.alternativa-btn{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 220, 0.407);
+    border: 1px solid rgb(146, 146, 131);
+}
+
+
+#respostas{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+    background: rgba(2, 118, 234, 0.175);
+    border-radius: 10px;
+    border: 1px solid rgba(2, 118, 234, 0.703);
+
+}
+
+#proxima-pergunta{
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+#explicacao{
+    font-size: 15px;
+}
