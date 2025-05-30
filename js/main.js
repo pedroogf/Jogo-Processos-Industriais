@@ -64,6 +64,12 @@ document.getElementById('proximo-btn').addEventListener('click', () => {
     }
 });
 
+document.getElementById('voltar').addEventListener('click', () => {
+    escolhaNicknames.style.display = 'none';
+    telaInicial.style.display = 'flex';
+})
+
+
 
 const perguntas = [
   {
@@ -388,4 +394,6 @@ function finalizarQuiz() {
     tabelaResultados.appendChild(linha);
   });
 }
+
+
 

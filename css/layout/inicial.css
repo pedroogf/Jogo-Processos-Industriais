@@ -11,6 +11,7 @@
     justify-content: center;
     gap: 20px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.32);
+    position: relative;
 }
 
 
@@ -100,4 +101,15 @@
     background: linear-gradient(to right, #ff6a00, #ff0000);
     font-size: 20px;
     color: white;
+}
+
+#voltar{
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    color: #ff0000;
+    padding: 0;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
